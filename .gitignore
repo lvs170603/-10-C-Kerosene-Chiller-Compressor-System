@@ -1,0 +1,8 @@
+# Ignore raw photos and temporary scratch files
+*.jpeg
+*.jpg
+*.png
+.system_generated/
+scratch/
+*.pyc
+__pycache__/
