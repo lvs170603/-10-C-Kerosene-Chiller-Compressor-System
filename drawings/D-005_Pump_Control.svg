@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 420" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #1F4E79; }
+      .subtitle { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; fill: #555555; }
+      .box { fill: #F8FAFC; stroke: #1F4E79; stroke-width: 2; rx: 6; }
+      .box-plc { fill: #EFF6FF; stroke: #2563EB; stroke-width: 2; rx: 6; }
+      .box-trip { fill: #FEF2F2; stroke: #DC2626; stroke-width: 2; rx: 6; }
+      .wire-r { stroke: #DC2626; stroke-width: 2.5; fill: none; }
+      .wire-y { stroke: #CA8A04; stroke-width: 2.5; fill: none; }
+      .wire-b { stroke: #2563EB; stroke-width: 2.5; fill: none; }
+      .wire-ctrl { stroke: #475569; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+      .text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; fill: #1E293B; }
+      .text-bold { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #0F172A; }
+      .text-tag { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #0369A1; }
+    </style>
+  </defs>
+  <!-- Border and Title Block -->
+  <rect x="10" y="10" width="930" height="400" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" rx="8"/>
+  <rect x="25" y="25" width="900" height="60" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1" rx="4"/>
+  <text x="40" y="52" class="title">D-005: PRIMARY / SECONDARY PUMP & CONDENSER FAN CONTROL</text>
+  <text x="40" y="72" class="subtitle">-10°C KEROSENE CHILLER | R I INDUSTRIES | DWG REV 1.0</text>
+  
+  <rect x="50" y="110" width="260" height="260" class="box"/>
+  <text x="70" y="140" class="text-bold">PRIMARY PUMP</text>
+  <text x="70" y="165" class="text">• Contactor: KM-05 (LC1D12)</text>
+  <text x="70" y="185" class="text">• Overload: LRD12 (X3)</text>
+  <text x="70" y="205" class="text">• Command: NO-00</text>
+  <text x="70" y="225" class="text">• Run Feedback: X1</text>
+  <text x="70" y="255" class="text">Flow Switch Interlock:</text>
+  <text x="70" y="275" class="text">• X17 (WATER_FLOW) must</text>
+  <text x="70" y="295" class="text">  close within 10s</text>
+
+  <rect x="350" y="110" width="260" height="260" class="box"/>
+  <text x="370" y="140" class="text-bold">SECONDARY PUMP</text>
+  <text x="370" y="165" class="text">• Contactor: KM-06 (LC1D12)</text>
+  <text x="370" y="185" class="text">• Overload: LRD12 (X7)</text>
+  <text x="370" y="205" class="text">• Command: NO-01</text>
+  <text x="370" y="225" class="text">• Run Feedback: X2</text>
+  <text x="370" y="255" class="text">Stagger Delay:</text>
+  <text x="370" y="275" class="text">• Starts 5.0s after Primary</text>
+  <text x="370" y="295" class="text">  [SECONDARY_PUMP_DELAY]</text>
+
+  <rect x="650" y="110" width="260" height="260" class="box"/>
+  <text x="670" y="140" class="text-bold">CONDENSER FAN</text>
+  <text x="670" y="165" class="text">• Contactor: KM-07 (LC1D09)</text>
+  <text x="670" y="185" class="text">• Command: NO-02</text>
+  <text x="670" y="205" class="text">• Run Feedback: X8</text>
+  <text x="670" y="235" class="text">Permissive:</text>
+  <text x="670" y="255" class="text">• Fan must be confirmed</text>
+  <text x="670" y="275" class="text">  running before compressor</text>
+  <text x="670" y="295" class="text">  solenoids open</text>
+
+</svg>

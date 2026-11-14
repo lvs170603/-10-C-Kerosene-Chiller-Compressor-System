@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 420" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #1F4E79; }
+      .subtitle { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; fill: #555555; }
+      .box { fill: #F8FAFC; stroke: #1F4E79; stroke-width: 2; rx: 6; }
+      .box-plc { fill: #EFF6FF; stroke: #2563EB; stroke-width: 2; rx: 6; }
+      .box-trip { fill: #FEF2F2; stroke: #DC2626; stroke-width: 2; rx: 6; }
+      .wire-r { stroke: #DC2626; stroke-width: 2.5; fill: none; }
+      .wire-y { stroke: #CA8A04; stroke-width: 2.5; fill: none; }
+      .wire-b { stroke: #2563EB; stroke-width: 2.5; fill: none; }
+      .wire-ctrl { stroke: #475569; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+      .text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; fill: #1E293B; }
+      .text-bold { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #0F172A; }
+      .text-tag { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #0369A1; }
+    </style>
+  </defs>
+  <!-- Border and Title Block -->
+  <rect x="10" y="10" width="930" height="400" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" rx="8"/>
+  <rect x="25" y="25" width="900" height="60" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1" rx="4"/>
+  <text x="40" y="52" class="title">D-004: DUAL COMPRESSOR PART-WINDING STARTER SCHEMATIC</text>
+  <text x="40" y="72" class="subtitle">-10°C KEROSENE CHILLER | R I INDUSTRIES | DWG REV 1.0</text>
+  
+  <rect x="50" y="110" width="380" height="260" class="box"/>
+  <text x="70" y="140" class="text-bold">COMPRESSOR 1 (CIRCUIT 1)</text>
+  <text x="70" y="165" class="text">• Primary Contactor: KM-01 (Schneider LC1D40A, 24V)</text>
+  <text x="70" y="185" class="text">• Secondary Contactor: KM-02 (Schneider LC1D40A, 24V)</text>
+  <text x="70" y="205" class="text">• Inter-Winding Delay: 1.0 Second</text>
+  <text x="70" y="225" class="text">• Motor Protection: Minilec MPR D2 [4R1443]</text>
+  <text x="70" y="245" class="text">• Current Convertor: Minilec S2 CTS1/80 (32-80A)</text>
+  <text x="70" y="265" class="text">• Motor Overtemp: MDL 1 (Kriwan/PTC)</text>
+  <text x="70" y="285" class="text">• Refrigerant Solenoid: SOV 1 (NO-08)</text>
+
+  <rect x="500" y="110" width="380" height="260" class="box"/>
+  <text x="520" y="140" class="text-bold">COMPRESSOR 2 (CIRCUIT 2)</text>
+  <text x="520" y="165" class="text">• Primary Contactor: KM-03 (Schneider LC1D40A, 24V)</text>
+  <text x="520" y="185" class="text">• Secondary Contactor: KM-04 (Schneider LC1D40A, 24V)</text>
+  <text x="520" y="205" class="text">• Inter-Winding Delay: 1.0 Second</text>
+  <text x="520" y="225" class="text">• Motor Protection: Minilec MPR D2 [4R1551]</text>
+  <text x="520" y="245" class="text">• Current Convertor: Minilec S2 CTS1/80 (32-80A)</text>
+  <text x="520" y="265" class="text">• Motor Overtemp: MDL 2 (Kriwan/PTC)</text>
+  <text x="520" y="285" class="text">• Refrigerant Solenoid: SOV 2 (NO-09)</text>
+
+</svg>

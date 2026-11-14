@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 420" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #1F4E79; }
+      .subtitle { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; fill: #555555; }
+      .box { fill: #F8FAFC; stroke: #1F4E79; stroke-width: 2; rx: 6; }
+      .box-plc { fill: #EFF6FF; stroke: #2563EB; stroke-width: 2; rx: 6; }
+      .box-trip { fill: #FEF2F2; stroke: #DC2626; stroke-width: 2; rx: 6; }
+      .wire-r { stroke: #DC2626; stroke-width: 2.5; fill: none; }
+      .wire-y { stroke: #CA8A04; stroke-width: 2.5; fill: none; }
+      .wire-b { stroke: #2563EB; stroke-width: 2.5; fill: none; }
+      .wire-ctrl { stroke: #475569; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+      .text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; fill: #1E293B; }
+      .text-bold { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #0F172A; }
+      .text-tag { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #0369A1; }
+    </style>
+  </defs>
+  <!-- Border and Title Block -->
+  <rect x="10" y="10" width="930" height="400" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" rx="8"/>
+  <rect x="25" y="25" width="900" height="60" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1" rx="4"/>
+  <text x="40" y="52" class="title">D-007: AUTOMATIC CHILLING OPERATING SEQUENCE</text>
+  <text x="40" y="72" class="subtitle">-10°C KEROSENE CHILLER | R I INDUSTRIES | DWG REV 1.0</text>
+  
+  <rect x="50" y="110" width="850" height="260" class="box"/>
+  <text x="70" y="140" class="text-bold">COMPLETE AUTOMATIC OPERATING CYCLE (-10.0°C SETPOINT)</text>
+  <text x="70" y="170" class="text">1. Power On -> Selec PLC &amp; ATSEL HMI Boot -> Check Permissives (VMR X0=1, E-Stop=1)</text>
+  <text x="70" y="195" class="text">2. Select AUTO Mode -> Command Primary Pump KM-05 (NO-00) -> Wait Flow Switch (X17) [10s Delay]</text>
+  <text x="70" y="220" class="text">3. 5s Secondary Pump Delay -> Start Secondary Pump KM-06 (NO-01) &amp; Condenser Fan KM-07 (NO-02)</text>
+  <text x="70" y="245" class="text">4. Evaluate Outlet Temp -> If Temp > -8.0°C -> Open SOV 1 &amp; Start Comp 1 Primary (NO-03)</text>
+  <text x="70" y="270" class="text">5. 1.0s Part-Winding Delay -> Start Comp 1 Secondary (NO-04) -> Motor at 100% Full Load</text>
+  <text x="70" y="295" class="text">6. If High Process Load -> Stagger Comp 2 (NO-05 + 1.0s NO-06)</text>
+  <text x="70" y="320" class="text">7. When Temp Reaches -10.0°C -> Close Solenoids -> Pumpdown / Stop Compressors (Cut-Out)</text>
+
+</svg>

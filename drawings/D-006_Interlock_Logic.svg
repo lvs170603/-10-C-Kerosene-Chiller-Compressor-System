@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 420" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #1F4E79; }
+      .subtitle { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; fill: #555555; }
+      .box { fill: #F8FAFC; stroke: #1F4E79; stroke-width: 2; rx: 6; }
+      .box-plc { fill: #EFF6FF; stroke: #2563EB; stroke-width: 2; rx: 6; }
+      .box-trip { fill: #FEF2F2; stroke: #DC2626; stroke-width: 2; rx: 6; }
+      .wire-r { stroke: #DC2626; stroke-width: 2.5; fill: none; }
+      .wire-y { stroke: #CA8A04; stroke-width: 2.5; fill: none; }
+      .wire-b { stroke: #2563EB; stroke-width: 2.5; fill: none; }
+      .wire-ctrl { stroke: #475569; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+      .text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; fill: #1E293B; }
+      .text-bold { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #0F172A; }
+      .text-tag { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #0369A1; }
+    </style>
+  </defs>
+  <!-- Border and Title Block -->
+  <rect x="10" y="10" width="930" height="400" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" rx="8"/>
+  <rect x="25" y="25" width="900" height="60" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1" rx="4"/>
+  <text x="40" y="52" class="title">D-006: MASTER SAFETY INTERLOCK LOGIC DIAGRAM</text>
+  <text x="40" y="72" class="subtitle">-10°C KEROSENE CHILLER | R I INDUSTRIES | DWG REV 1.0</text>
+  
+  <rect x="50" y="110" width="400" height="260" class="box-trip"/>
+  <text x="70" y="140" class="text-bold" fill="#DC2626">SYSTEM SHUTDOWN INTERLOCKS</text>
+  <text x="70" y="165" class="text">• Emergency Stop Loop -> Hardware Dropout of Contactors</text>
+  <text x="70" y="185" class="text">• Minilec D2 VMR2 (X0) -> 3-Ph Voltage / Phase Unbalance</text>
+  <text x="70" y="205" class="text">• Primary Pump Overload (X3) -> Kerosene Circulation Loss</text>
+  <text x="70" y="225" class="text">• Paddle Flow Switch (X17) -> Evaporator Freeze Protection</text>
+  <text x="70" y="245" class="text">• Action: Complete System Shutdown + Red Pilot Lamp + Buzzer</text>
+
+  <rect x="500" y="110" width="400" height="260" class="box-trip"/>
+  <text x="520" y="140" class="text-bold" fill="#DC2626">CIRCUIT TRIP INTERLOCKS</text>
+  <text x="520" y="165" class="text">• Circuit 1 HP Switch (X10) -> Immediate Cutout Comp 1</text>
+  <text x="520" y="185" class="text">• Circuit 1 LP Switch (X9) -> Low Suction Pressure Cutout</text>
+  <text x="520" y="205" class="text">• Circuit 1 Motor Overtemp (X11) -> Kriwan/PTC Module Trip</text>
+  <text x="520" y="225" class="text">• Circuit 1 Motor Overload (X12) -> Minilec MPR D2 Trip</text>
+  <text x="520" y="245" class="text">• Circuit 2 Identical Interlocks -> (X14, X13, X15, X16)</text>
+  <text x="520" y="265" class="text">• Action: Isolated Circuit Trip; Alternate Circuit Continues</text>
+
+</svg>
